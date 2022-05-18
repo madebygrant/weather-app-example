@@ -1,0 +1,162 @@
+/*! Edited Version: minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// Remove blue focus ring
+*:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: var(--col-base-background);
+    font-family: var(--font-base);
+    font-size: var(--base-text-size);
+    color: var(--col-base-text);
+}
+
+body {
+    text-rendering: optimizeSpeed;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+input,
+select {
+    margin: 0;
+}
+
+img,
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+iframe {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+a,
+button {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: transparent;
+    text-transform: none;
+    border: 0;
+    border-radius: 0;
+    outline: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        outline: none;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+img {
+    border-style: none;
+    display: inline-block;
+    image-rendering: auto;
+    height: auto;
+
+    &[src$='.svg'] {
+        width: 1024px; // For Firefox
+    }
+}
+
+svg {
+    display: inline-block;
+    pointer-events: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+// Hides the element meanwhile still be accessible to those using screen readers
+.screenreader-only {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}

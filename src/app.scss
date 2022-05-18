@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;600&display=swap');
+@import './reset';
+
+html{
+    background-color: #f5ebe0;
+    font-family: "Urbanist", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.weather-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.notice{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
